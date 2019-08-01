@@ -4,7 +4,8 @@ use lib ".";
 
 use BOSS::Config;
 use Manager::Misc::Light;
-use PerlLib::SwissArmyKnife;
+# use PerlLib::SwissArmyKnife;
+use File::Slurp;
 
 use Digest::MD5 qw(md5 md5_hex md5_base64);
 
