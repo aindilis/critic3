@@ -1,0 +1,20 @@
+*CRITIC KE: 4e9266008190c523820ebd3f4c2d24a7*
+
+  Mt : UniversalVocabularyMt
+  isa : [Inf]Collection
+
+  Mt : FRDCSAMt
+  isa : [Def]Project  [Def]ResearchProject
+
+  Mt : POSICommunityMt
+  [Def](isa Politico-FRDCSAProject FRDCSAProject)
+
+  Mt : UniversalVocabularyMt
+  genls : [Inf]Thing
+
+  Mt : FRDCSAMt
+  [Inf](correspondingSpecificationOfProject
+	(SpecificationOfProjectEventFn FRDCSAProject) FRDCSAProject)
+
+  Mt : FRDCSAMt
+  projectTeamSize : [Def]2
