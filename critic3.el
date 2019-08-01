@@ -1,6 +1,6 @@
 ;; critic3-mode.el
 
-(load "/var/lib/myfrdcsa/codebases/minor/critic3/frdcsa/emacs/critic-knowledge-editor.el")
+(load-file "frdcsa/emacs/critic-knowledge-editor.el")
 
 (global-set-key "\C-cCrc" 'critic)
 (global-set-key "\C-cCrk" 'critic-knowledge-editor)

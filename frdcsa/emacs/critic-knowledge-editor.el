@@ -38,7 +38,7 @@
   (insert
    (shell-command-to-string
     (concat 
-     "/var/lib/myfrdcsa/codebases/minor/critic3/scripts/generate-page-for.pl --id "
+     "scripts/generate-page-for.pl --id "
      entry-id)))
   (beginning-of-buffer)
   )
