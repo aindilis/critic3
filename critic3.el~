@@ -381,10 +381,3 @@
   (set-mark (point))
   (move-beginning-of-line nil)
   (buffer-substring-no-properties (point) (mark))))
-
-(defun see (data &optional duration)
- ""
- (interactive)
- (message (prin1-to-string data))
- (sit-for (if duration duration 2.0))
- data)
