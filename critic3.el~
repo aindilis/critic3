@@ -358,17 +358,3 @@
  (balance-windows)) 
 
 ;; (critic-split-window-into-n-columns 5)
-
-(defun non-nil (arg)
- (if (symbolp arg)
-  (and (boundp arg)
-   (not (equal arg nil)))
-  t))
-
-(defun kmax-clear-buffer (&optional buffer)
- ""
- (interactive)
- (if buffer
-  (switch-to-buffer buffer))
- (mark-whole-buffer)
- (delete-region (point) (mark)))
