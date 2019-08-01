@@ -30,7 +30,7 @@ if ($context eq 'Org::FRDCSA::CRITIC::Domain::UniLang') {
   my $light = Manager::Misc::Light->new();
   my $c2 = read_file("sample-to.do");
   # my $c2 = substr($c,0,10000);
-  my $parsed = $light->Parse(Contents => '((('.$c2.')');
+  my $parsed = $light->Parse(Contents => '((('.$c2.')))');
   # print Dumper($parsed);
   foreach my $entry (@{$parsed->[0][0][0]}) {
     my $result = $light->Generate(Structure => $entry);

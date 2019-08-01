@@ -109,7 +109,7 @@
  (insert
   (shell-command-to-string
    (concat
-    "/var/lib/myfrdcsa/codebases/minor/critic3/scripts/critic-load-current-context.pl -d "
+    "scripts/critic-load-current-context.pl -d "
     (shell-quote-argument critic-current-context))))
  (critic-hide-digests)
  (critic-hide-keys))
