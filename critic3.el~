@@ -110,7 +110,7 @@
   (shell-command-to-string
    (concat
     "scripts/critic-load-current-context.pl -d "
-    (shell-quote-argument critic-current-context) " 2> /dev/null")))
+    (shell-quote-argument critic-current-context))))
  (critic-hide-digests)
  (critic-hide-keys))
 
