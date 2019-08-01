@@ -372,3 +372,12 @@
   (switch-to-buffer buffer))
  (mark-whole-buffer)
  (delete-region (point) (mark)))
+
+(defun kmax-get-line ()
+ ""
+ (interactive)
+ (save-excursion
+  (move-end-of-line nil)
+  (set-mark (point))
+  (move-beginning-of-line nil)
+  (buffer-substring-no-properties (point) (mark))))
